@@ -9,7 +9,7 @@ except ImportError:
     from Networks.DPML.osnet import OSBlock, OSNet
 
 
-def build_osnet(model_type="1_0", pretrained=False):
+def build_osnet(model_type="1_0", pretrained=True):
     if model_type == "1_0":
         channels = [64, 256, 384, 512]
     elif model_type == "0_5":
